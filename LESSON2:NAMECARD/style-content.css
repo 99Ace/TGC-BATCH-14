@@ -1,0 +1,90 @@
+
+.card {
+  height: 400px;
+  width: 700px;
+  border: 1px solid black;
+  /* background: lightblue; */
+}
+.upper {
+  height: 40%;
+  background: lightgray;
+  display: flex;
+  border-bottom: 2px solid rgb(136, 132, 132);
+}
+.logo{
+  /* background: lemonchiffon; */
+  flex:2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo>img {
+  height: 100px;
+}
+.company {
+  /* background: lavender; */
+  flex: 4;
+
+  display: flex;
+  align-items: center;
+}
+
+
+
+.lower {
+  height: 60%;
+  /* background: lightgray; */
+
+  display: flex;
+}
+.pic {
+  /* background: lightgreen; */
+  flex: 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* METHOD I */
+.circle {
+  height: 150px;
+  width: 150px;
+  border-radius:50%; 
+  /* background: salmon; */
+
+  overflow: hidden;
+}
+.circle>img {
+  width: 100%;
+}
+
+/* METHOD II  */
+.circle-bg {
+  height: 150px;
+  width: 150px;
+  border-radius:50%; 
+  background: salmon;
+  background-image: url('woody.png');
+  background-size: cover;
+  background-position: top;
+}
+
+.info {
+  /* background: cornflowerblue; */
+  flex:3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info h3, .info h4, .address h4 {
+  margin: 8px;
+}
+.address {
+  /* background: deepskyblue; */
+  flex: 3;
+
+  display: flex;
+  align-items: center;
+}

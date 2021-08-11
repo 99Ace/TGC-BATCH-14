@@ -1,0 +1,42 @@
+.card {
+    height: 400px;
+    width: 700px;
+    border: 1px solid black;
+    background: lightblue;
+}
+.upper {
+    height: 40%;
+    background: lightgrey;
+    display: flex;
+}
+.logo{
+    background: lemonchiffon;
+    flex:2;
+}
+
+.company {
+    background: lavender;
+    flex: 4;
+
+}
+
+.lower {
+    height: 60%;
+    background: lightgray;
+
+    display: flex;
+}
+.pic {
+    background: lightgreen;
+    flex: 3;
+}
+
+.info {
+    background: cornflowerblue;
+    flex:3;
+}
+
+.address {
+    background: deepskyblue;
+    flex: 3;
+}
