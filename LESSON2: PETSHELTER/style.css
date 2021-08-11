@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    height: 400vh;
+  }
+  main {
+    height: 100vh;
+    background-image: url('dog-man.jpeg');
+    background-size: cover;
+    background-position: center;
+    
+  }
+  .overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+  
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  #callout {
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 50px;
+  }
+  
+  #section-listings {
+    min-height: 80vh;
+    /* background: lightblue; */
+  }
+  #pet-listings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .frame {
+    width: 300px;
+    height: 450px;
+    background: burlywood;
+    border: 1px solid black;
+    margin-top: 20px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    position: relative;
+  }
+  .pet-img {
+    background: lightcoral;
+    flex: 1;
+    background-image: url('cat.jpeg');
+    background-size: cover;
+  }
+  .pet-info {
+    background: lemonchiffon;
+    flex: 1;
+    padding: 10px;
+  }
+  .btn {
+    padding: 10px 20px;
+    border-radius: 12px;
+  }
+  .btn-adopt{
+    background: rgb(39, 106, 194);
+    border: 1px solid rgb(36, 108, 202);
+    color: white;
+  
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+  }
+  .btn-info{
+    background: rgb(39, 194, 65);
+    border: 1px solid rgb(39, 194, 65);
+    color: white;
+  
+    position: absolute;
+    bottom: -15px;
+    right: 70px;
+  }
+  
