@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <div class="container-fluid">
+        <!-- child 1 - LOGO -->
+        <a class="navbar-brand" href="#">
+          <img src="images/logo-mfs.png" alt="mfs logo">
+          <img src="images/logo-ntuc.png" alt="ntuc logo" class="ms-2">
+        </a>
+        <form class="ms-auto d-none d-md-inline-block d-lg-none me-2">
+            <button class="btn btn-register" type="submit">Register</button>
+        </form>
+        <!-- hamburger button -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <!-- navlinks -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- ul links -->
+          <ul class="navbar-nav mb-2 ms-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">The MFS Experience</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cirriculum
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action 1</a></li>
+                <li><a class="dropdown-item" href="#">Action 2</a></li>
+                <li><a class="dropdown-item" href="#">Action 3</a></li>
+              </ul>
+            </li>
+      
+          </ul>
+          <!-- register button -->
+          <form class="d-md-none d-lg-inline-block">
+            <button class="btn btn-register" type="submit">Register</button>
+          </form>
+        </div>
+
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    
+    <!-- hero img -->
+    <main>
+      <div class="overlay d-flex justify-content-center align-items-end">
+        <div class="text-light text-center pb-5">
+          <h1>My Journey</h1>
+          <i class="fas fa-arrow-circle-down"></i>
+        </div>
+      </div>
+    </main>
+    <!-- end of hero img -->
+    <section id="history" class="container-fluid mt-5">
+      <div class="row history-frame mx-auto">
+        <div class="col-12 text-center py-5 px-3">
+          <img src="https://www.myfirstskool.com/resources/front/template/msf/images/icon-star.svg" alt="" class="history-icon">
+          <p>For more than 40 years, My First Skool has been a leader in early childhood care and education. As the pre-school arm of NTUC (National Trades Union Congress) First Campus Co-operative, we have grown into one of Singapore's most respected early childhood organisations since we opened our doors in 1977.
+
+</p>
+        </div>
+        <div class="col-12 col-md-4 text-center py-5 px-3">
+          <div>>
+            <img src="https://www.myfirstskool.com/resources/front/template/msf/images/icon-school.svg" alt="" class="history-icon">
+          </div>
+          <span class="history-header">Over <b>140</b><br>
+          Pre-schools Islandwide</span>
+          
+          <p>Dedicated to bringing quality pre-school education within easy reach, we have over 140 pre-schools islandwide, and more every day.</p>
+        </div>
+        <div class="col-12 col-md-4 text-center py-5 px-3">
+          <div>>
+            <img src="https://www.myfirstskool.com/resources/front/template/msf/images/icon-exchange.svg" alt="" class="history-icon">
+          </div>
+          <span class="history-header">Pre-schools with a <br><b>difference</b></span>
+          
+          <p>To enable all-round development in our children, our carefully devised curriculum allow them to learn through non-traditional modes and further develop their areas of interests, be it in STEM, arts, nature, bilingualism or cultural intelligence.</p>
+        </div>
+        <div class="col-12 col-md-4 text-center py-5 px-3">
+          <div>>
+            <img src="https://www.myfirstskool.com/resources/front/template/msf/images/icon-family.svg" alt="" class="history-icon">
+          </div>
+          <span class="history-header">Serving more than <br> 
+          <b>20,000</b> families</span>
+          
+          <p>We are proud to bring quality education to more than 20,000 young families in every Singapore neighbourhood.</p>
+        </div>                
+        
+      </div>
+
+
+
+
+
+
+
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

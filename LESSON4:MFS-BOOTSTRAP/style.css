@@ -1,0 +1,56 @@
+.navbar-brand>img {
+    height: 35px;
+  }
+  .nav-link {
+    color:rgba(0,0,0,0.5) !important;
+    font-size: 0.9rem;
+  }
+  
+  main {
+    /* background-image: url('../images/mfs.jpg');
+    background-size: cover;
+    background-position: center; */
+    height: 60vh;
+    /* same as above */
+    background: url('../images/mfs.jpg') cover center;
+   
+    display: flex;
+    align-items: flex-end;
+  }
+  .overlay {
+    height: 50%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0), rgb(214, 139, 25));
+  }
+  
+  .btn {
+    border-radius: 24px;
+    padding: 8px 25px;
+  }
+  .btn-register {
+    background: salmon;
+    border: none;
+    color: white;
+  }
+  .history-frame{
+    max-width: 1200px;
+  }
+  .history-icon {
+    height: 150px;
+  }
+  .history-header {
+    font-size: 1.6rem;
+  }
+  .history-header>b {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 768px){
+    main {
+      height: 80vh;
+    }
+  }
+  @media screen and (min-width: 1200px){
+    main {
+      height: 100vh;
+    }
+  }
