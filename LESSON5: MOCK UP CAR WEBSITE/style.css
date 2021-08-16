@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+  }
+  
+  /* navbar - set the height of the logo img */
+  .navbar-brand img {
+    height: 60px;
+  }
+  /* end of navbar */
+  
+  /* hero */
+  main {
+    height: 100vh;
+    background-image: url('https://www.bmw.mn/content/dam/bmw/common/topics/offers-and-services/original-bmw-accessories/m-performance/MPP_Update_stage2_stage.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1481649234662.jpg');
+    background-size: cover;
+    background-position: center;
+    /* set parent to relative */
+    position: relative;
+  }
+  /* to set darker shades to the hero img */
+  .overlay {
+    height: 100%;
+    background-color: rgba(0,0,0,0.2); /* try change th e last number to see the different opacity (0.0 -1.0 max)*/
+    color: white;
+  }
+  .callout {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px 30px;
+  }
+  /* end of hero */
+  
+  #advert {
+    height: 300px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/BMW_M_Grey-Colour_RGB.svg/1200px-BMW_M_Grey-Colour_RGB.svg.png');
+    background-size: cover;
+    margin-top: 150px;
+    position: relative;
+  
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  
+    color: white;
+  }
+  
+  .portrait {
+    height: 200px;
+    width: 300px;
+    background-image: url('https://da4dkroembtou.cloudfront.net/wp-content/uploads/2020/09/BMW-M3-G80-07-1024x724.jpg');
+    background-size: cover;
+    background-position: center ;
+    border: 10px solid rgb(42, 64, 138);
+    border-radius:8px; 
+  
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .social {
+    height: 120px;
+    width: 50px;
+    background: rgb(42, 64, 138);
+    border: 5px solid rgb(41, 61, 126);
+  
+    /* to centralise and display social media icons in column, center of box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    /* position the box in right center */
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    /* translateY to offset it back to middle, translateX to offset it to hide it and show when hover  */
+    transform: translateY(-50%) translateX(60%);
+    /* z-index to set in front of all items */
+    z-index: 1;
+    transition: transform 2s;
+  }
+  /* to show the icons when hover over */
+  .social:hover {
+    transform: translateY(-50%) translateX(0%);
+  }
+  .icon {
+    color: white;
+    font-size: 2rem;
+  }
+  
+  /* setting for laptop screen */
+  @media screen and (min-width: 1200px){
+    /* navbar */
+    nav {
+      height: 130px;
+    }
+    .navbar-brand {
+      position: absolute;
+      top: 10px;
+      left: 40px;
+    }
+    .navbar-brand img {
+      height: 100px;
+    }
+    .nav-link {
+      font-size: 1.2rem;
+    }
+    /* end of navbar */
+  
+    /* hero */
+    .callout {
+      justify-content: center;
+    }
+    .callout>div {
+      width: 60%;
+    }
+    /* end of hero */
+  }

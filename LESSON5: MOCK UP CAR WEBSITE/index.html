@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!-- social media bar -->
+    <div class="social">
+      <div><i class="fab fa-facebook-square icon"></i></div>
+      <div><i class="fab fa-instagram-square icon"></i></div>
+      <div><i class="fab fa-whatsapp-square icon"></i></div>
+    </div>
+    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- COMPANY LOGO -->
+            <a class="navbar-brand" href="#">
+                <!-- LOAD IN YOUR COMPANY LOGOG IN THE SRC -->
+                <img src="https://e7.pngegg.com/pngimages/290/190/png-clipart-bmw-5-series-car-bmw-x5-bmw-x3-bmw-emblem-logo.png" alt="Mikar 9 logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Used Car</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sell</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- end  of navbar -->
+
+    <!-- hero image -->
+    <main>
+        <!-- OVERLAY FOR DARKENING THE BACKGROUND IMAGE -->
+        <div class="row overlay">
+            <!-- CALLOUT BOX WITH THE TAGLINE -->
+            <!-- check .callout in css for styling -->
+            <div class="col callout">
+                <div>
+                    <h1>Drive away with a peace of mind with warranty till end of drive </h1>
+                    <small>* Terms and condition applys</small>
+                </div>
+            </div>
+            <!-- FORM THAT APPEAR IN big screen -->
+            <!-- display when ipad size and above -->
+            <div class="col-5 p-5 d-none d-md-block">
+                <div>
+                    <form class="border border-5 p-3">
+                        <h4>Get a Quotation</h4>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">First and last name</span>
+                            <input type="text" name="fname" class="form-control" placeholder="first name">
+                            <input type="text" name="lname" class="form-control" placeholder="last name">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Plate number</span>
+                            <input type="text" name="plate-number" class="form-control" placeholder="car plate number">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Contact number</span>
+                            <input type="text" name="contact-number" class="form-control" placeholder="contact">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end of hero img -->
+
+    <!-- form for mobile screen   -->
+    <!-- hide when big screen, no need to set for mobile as it shows by default -->
+    <div class="p-5 d-md-none">
+        <form class="border border-5 p-3">
+            <h4>Get a Quotation</h4>
+            <div class="input-group mb-3">
+                <span class="input-group-text">First and last name</span>
+                <input type="text" name="fname" class="form-control" placeholder="first name">
+                <input type="text" name="lname" class="form-control" placeholder="last name">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Plate number</span>
+                <input type="text" name="plate-number" class="form-control" placeholder="car plate number">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Contact number</span>
+                <input type="text" name="contact-number" class="form-control" placeholder="contact">
+            </div>
+        </form>
+    </div>
+    <!-- end of form for small -->
+
+    <!-- hot picks -->
+    <section id="hotpick" class="mt-5">
+        <h3 class="text-center mb-3">Popular cars of the month</h3>
+        <div class="row">
+            <!-- Listing 1 -->
+            <div class="col">
+                <div class="card mx-auto" style="width: 300px;">
+                    <img src="https://da4dkroembtou.cloudfront.net/wp-content/uploads/2020/09/BMW-M3-G80-07-1024x724.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BMW Z4 3.0</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quibusdam
+                            quo expedita laborum voluptatibus. Expedita officia ipsum cumque quaerat iusto fugit minus,
+                            ratione consequatur quod magni qui impedit cum quis?</p>
+                        <a href="#" class="btn btn-primary">More info</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Listing 2 -->
+            <div class="col">
+                <div class="card mx-auto" style="width: 300px;">
+                    <img src="https://da4dkroembtou.cloudfront.net/wp-content/uploads/2020/09/BMW-M3-G80-07-1024x724.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BMW Z4 3.0</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quibusdam
+                            quo expedita laborum voluptatibus. Expedita officia ipsum cumque quaerat iusto fugit minus,
+                            ratione consequatur quod magni qui impedit cum quis?</p>
+                        <a href="#" class="btn btn-primary">More info</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Listing 3 -->
+            <div class="col d-none d-lg-block">
+                <div class="card mx-auto" style="width: 300px;">
+                    <img src="https://da4dkroembtou.cloudfront.net/wp-content/uploads/2020/09/BMW-M3-G80-07-1024x724.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BMW Z4 3.0</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quibusdam
+                            quo expedita laborum voluptatibus. Expedita officia ipsum cumque quaerat iusto fugit minus,
+                            ratione consequatur quod magni qui impedit cum quis?</p>
+                        <a href="#" class="btn btn-primary">More info</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Listing 4 -->
+            <div class="col d-none d-lg-block">
+                <div class="card mx-auto" style="width: 300px;">
+                    <img src="https://da4dkroembtou.cloudfront.net/wp-content/uploads/2020/09/BMW-M3-G80-07-1024x724.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BMW Z4 3.0</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quibusdam
+                            quo expedita laborum voluptatibus. Expedita officia ipsum cumque quaerat iusto fugit minus,
+                            ratione consequatur quod magni qui impedit cum quis?</p>
+                        <a href="#" class="btn btn-primary">More info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of hot picks -->
+
+    <!-- insert an advert section for some advertisement  -->
+    <section id="advert">
+        <!-- to be move out of position using absolute -->
+        <div class="portrait">
+        </div>
+        <!-- remaining child of #advert -->
+        <figure class="text-center mb-5">
+            <blockquote class="blockquote">
+                <p>Ultimate Driving Machine! <br>
+                    The core of the Z4 is in its drive quality. </p>
+            </blockquote>
+            <figcaption class="blockquote-footer text-light">
+                Check out our new cars <cite title="Source Title"> <a href="" class="badge bg-primary">B.M.W</a></cite>
+            </figcaption>
+        </figure>
+    </section>
+    <!-- end of advertisement section -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
+
